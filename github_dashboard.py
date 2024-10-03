@@ -38,7 +38,7 @@ st.bar_chart(avg_stars)
 st.header("Forks vs Stars")
 st.scatter_chart(df[['forks_count', 'stars_count']].sample(min(1000, len(df))))
 
-chnages
+
 st.header("Project Explorer")
 selected_language = st.selectbox("Select a language", df['language'].value_counts().index)
 filtered_df = df[df['language'] == selected_language].sort_values('stars_count', ascending=False).head(10)
